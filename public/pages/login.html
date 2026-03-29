@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Asistencia UMG</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="page-wrapper">
+
+        <div class="left-panel">
+            <div class="overlay"></div>
+            <div class="left-content">
+                <img src="/img/logo-umg.png" alt="Logo UMG" class="logo-umg">
+                <h1>Portal de Asistencia</h1>
+                <h2>Universidad Mariano Gálvez de Guatemala</h2>
+                <p>
+                    Plataforma de acceso al módulo web para control y gestión de asistencia académica.
+                </p>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="login-card">
+                <div class="top-bar"></div>
+
+                <div class="login-header">
+                    <h3>Iniciar Sesión</h3>
+                    <p>Ingrese sus credenciales institucionales</p>
+                </div>
+
+                <form id="login-form">
+                    <div id="form-message" class="form-message"></div>
+
+                    <div class="form-group">
+                        <label for="usuario">Usuario</label>
+                        <input type="text" id="usuario" placeholder="Ingrese su usuario" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" placeholder="Ingrese su contraseña" required>
+                    </div>
+
+                    <button type="submit" id="login-btn">Ingresar al sistema</button>
+                </form>
+
+                <div class="login-footer">
+                    <span>UMG · Sistema de asistencia biométrica</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="welcome-popup" class="popup-overlay">
+        <div class="popup-box">
+            <img src="/img/logo-umg.png" alt="Logo UMG" class="popup-logo">
+            <h2>Bienvenido</h2>
+            <p id="welcome-message">Acceso concedido.</p>
+            <button id="popup-btn">Continuar</button>
+        </div>
+    </div>
+
+    <script src="../js/login.js"></script>
+</body>
+</html>
